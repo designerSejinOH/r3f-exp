@@ -21,7 +21,6 @@ const ThreeCanvas = ({ children, ...props }) => {
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
         />
-        <Environment preset='city' />
         {children}
         <Preload all />
         <OrbitControls ref={ref} maxPolarAngle={Math.PI / 2.2} minZoom={20} maxZoom={70} />
